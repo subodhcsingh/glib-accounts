@@ -216,9 +216,9 @@ function generateGeneralLedger() {
 //         html += `
 //             <tr style="border-bottom: 1px solid #e2edf2;">
 //                 <td style="padding: 0.6rem;"><strong>${escapeHtml(cat)}</strong></td>
-//                 <td style="padding: 0.6rem; text-align: right; color: #2b7e3a;">₹${inc.toFixed(2)}</td>
-//                 <td style="padding: 0.6rem; text-align: right; color: #bc4e2c;">₹${exp.toFixed(2)}</td>
-//                 <td style="padding: 0.6rem; text-align: right; font-weight: ${net !== 0 ? 'bold' : 'normal'};">₹${net.toFixed(2)}</td>
+//                 <td style="padding: 0.6rem; text-align: right; color: #2b7e3a;">${inc.toFixed(2)}</td>
+//                 <td style="padding: 0.6rem; text-align: right; color: #bc4e2c;">${exp.toFixed(2)}</td>
+//                 <td style="padding: 0.6rem; text-align: right; font-weight: ${net !== 0 ? 'bold' : 'normal'};">${net.toFixed(2)}</td>
 //                 <td style="padding: 0.6rem; text-align: center;">${summary[cat].count}</td>
 //             </tr>
 //         `;
@@ -229,9 +229,9 @@ function generateGeneralLedger() {
 //                 <tfoot>
 //                     <tr style="background: #f1f5f9; border-top: 2px solid #cbd5e1;">
 //                         <td style="padding: 0.6rem;"><strong>TOTALS</strong></td>
-//                         <td style="padding: 0.6rem; text-align: right; font-weight: bold;">₹${totalIncome.toFixed(2)}</td>
-//                         <td style="padding: 0.6rem; text-align: right; font-weight: bold;">₹${totalExpense.toFixed(2)}</td>
-//                         <td style="padding: 0.6rem; text-align: right; font-weight: bold;">₹${(totalIncome - totalExpense).toFixed(2)}</td>
+//                         <td style="padding: 0.6rem; text-align: right; font-weight: bold;">${totalIncome.toFixed(2)}</td>
+//                         <td style="padding: 0.6rem; text-align: right; font-weight: bold;">${totalExpense.toFixed(2)}</td>
+//                         <td style="padding: 0.6rem; text-align: right; font-weight: bold;">${(totalIncome - totalExpense).toFixed(2)}</td>
 //                         <td style="padding: 0.6rem; text-align: center;">${transactions.length}</td>
 //                     </tr>
 //                 </tfoot>
